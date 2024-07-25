@@ -1,1 +1,152 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'fonts';
+@import 'margins';
+
+:root {
+  --light-solid: #fff;
+  --light-transparent: rgba(255, 255, 255, 0.75);
+  --light-faf4f0: #faf4f0;
+  --dark-solid: #000;
+  --dark-transparent: #000;
+  --dark-active: #161616;
+  --dark-without-fill: rgba(216, 216, 216, 0);
+  --dark-message: #404040;
+  --gray-solid: #5f646d;
+  --gray-light: #5f646d;
+  --gray-soft: #5f646d;
+  --outline-ae7aff: #d8d8d8;
+  --primary-primary: #ae7aff;
+  --primary-hover: #ae7aff;
+  --primary-soft: #ae7aff;
+  --green-primary: #98e9ab;
+  --green-soft: #98e9ab;
+  --yellow-primary: #fae8a4;
+  --yellow-soft: #fae8a4;
+  --red-primary: #e99898;
+  --red-soft: #e99898;
+  --color: #404040;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'JetBrains Mono', sans-serif;
+  color: var(--light-solid);
+  background-image: url(/assets/imgs/background.jpg);
+}
+
+.skill-tag {
+  padding: 4px 8px;
+  border: 1px solid var(--light-solid);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--light-solid);
+  height: 24px;
+}
+
+.btn {
+  width: 100%;
+  border: 1px solid var(--dark-solid);
+  border-radius: 4px;
+  padding: 10px 20px;
+  height: 44px;
+  background: var(--primary-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--dark-solid);
+  cursor: pointer;
+}
+
+.btn-shadow {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: var(--gray-light);
+    border-radius: 4px;
+  }
+}
+
+.h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 117%;
+  color: var(--light-solid);
+}
+
+.h4 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--light-solid);
+}
+
+.h6 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--light-solid);
+}
+
+.subtitles {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--light-solid);
+}
+
+.medium-text {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.regular {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--light-solid);
+}
+
+.tt-control-label {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--light-solid);
+}
+
+.tt-input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid var(--light-solid);
+  border-radius: 2px;
+  padding: 12px 20px;
+  //width: 440px;
+  height: 44px;
+  background: var(--dark-solid);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--light-transparent);
+}
