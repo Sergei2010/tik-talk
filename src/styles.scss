@@ -150,3 +150,41 @@ body {
   line-height: 150%;
   color: var(--light-transparent);
 }
+
+.tt-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tt-form-label__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--light-transparent);
+}
+
+.tt-form-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--light-transparent);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--light-transparent);
+  border: none;
+  background: none;
+  color: var(--light-transparent);
+  border-bottom: 1px solid var(--light-transparent);
+  height: 33px;
+
+  &:focus-visible {
+    outline: 1px solid var(--dark-solid);
+  }
+}
+
+.tt-form-textarea {
+  height: 84px;
+  resize: none;
+}
